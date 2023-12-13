@@ -2,10 +2,10 @@ trigger:
 - main
 
 pool: 
-    name: Default
+  name: Default
 
-parameters:
-    buildConfiguration: 'Release'
+variables:
+  buildConfiguration: 'Release'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
